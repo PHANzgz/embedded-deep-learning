@@ -1,0 +1,4 @@
+Version,alpha,n_dense,loss,train_accuracy,val_accuracy,val_AUC,SizeFP16(KB),Optimizer,learning_rate,Notes
+V1,0.5,256,binary_crossentropy,0.8407,0.8171,0.9422,1.871,"Adam, RMSProp","10^-4, 10^-5",-
+V2,0.5,256,binary_crossentropy,0.8594,0.8298,0.9524,2.031,"Adam, RMSProp","10^-4, 10^-5",-
+V2,0.35,256,binary_crossentropy,0.8436,0.829,0.9494,1.465,"Adam, RMSProp","10^-4, 10^-5",-

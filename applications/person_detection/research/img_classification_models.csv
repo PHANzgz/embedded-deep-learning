@@ -1,0 +1,84 @@
+Model,Number of parameters,FLOPS,Top-1 Error,Top-5 Error,Year,DEMO
+AlexNet ('One weird trick for parallelizing convolutional neural networks'),62.3M,"1,132.33M",40.96,18.24,2014,X
+VGG-16 ('Very Deep Convolutional Networks for Large-Scale Image Recognition'),138.3M,?,26.78,8.69,2014,X
+ResNet-10 ('Deep Residual Learning for Image Recognition'),5.5M,894.04M,34.69,14.36,2015,Try live
+ResNet-18 ('Deep Residual Learning for Image Recognition'),11.7M,"1,820.41M",28.53,9.82,2015,Try live
+ResNet-34 ('Deep Residual Learning for Image Recognition'),21.8M,"3,672.68M",24.84,7.8,2015,Try live
+ResNet-50 ('Deep Residual Learning for Image Recognition'),25.5M,"3,877.95M",22.28,6.33,2015,Try live
+InceptionV3 ('Rethinking the Inception Architecture for Computer Vision'),23.8M,?,21.2,5.6,2015,X
+PreResNet-18 ('Identity Mappings in Deep Residual Networks'),11.7M,"1,820.56M",28.43,9.72,2016,Try live
+PreResNet-34 ('Identity Mappings in Deep Residual Networks'),21.8M,"3,672.83M",24.89,7.74,2016,Try live
+PreResNet-50 ('Identity Mappings in Deep Residual Networks'),25.6M,"3,875.44M",22.4,6.47,2016,Try live
+DenseNet-121 ('Densely Connected Convolutional Networks'),8.0M,"2,872.13M",23.48,7.04,2016,Try live
+DenseNet-161 ('Densely Connected Convolutional Networks'),28.7M,"7,793.16M",22.86,6.44,2016,X
+PyramidNet-101 ('Deep Pyramidal Residual Networks'),42.5M,"8,743.54M",21.98,6.2,2016,X
+ResNeXt-14(32x4d) ('Aggregated Residual Transformations for Deep Neural Networks'),9.5M,"1,603.46M",30.32,11.46,2016,Try live
+ResNeXt-26(32x4d) ('Aggregated Residual Transformations for Deep Neural Networks'),15.4M,"2,488.07M",24.14,7.46,2016,Try live
+WRN-50-2 ('Wide Residual Networks'),68.9M,"11,405.42M",22.53,6.41,2016,X
+Xception ('Xception: Deep Learning with Depthwise Separable Convolutions'),"22,855,952","8,403.63M",20.97,5.49,2016,X
+"InceptionV4 ('Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning')","42,679,816","12,304.93M",20.64,5.29,2016,X
+"InceptionResNetV2 ('Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning')","55,843,464","13,188.64M",19.93,4.9,2016,X
+PolyNet ('PolyNet: A Pursuit of Structural Diversity in Very Deep Networks'),"95,366,600","34,821.34M",19.1,4.52,2016,X
+DarkNet Ref ('Darknet: Open source neural networks in C'),"7,319,416",367.59M,38.58,17.18,2016,Try live
+DarkNet Tiny ('Darknet: Open source neural networks in C'),"1,042,104",500.85M,40.74,17.84,2016,Try live
+DarkNet 53 ('Darknet: Open source neural networks in C'),"41,609,928","7,133.86M",21.75,5.64,2016,Try live
+SqueezeResNet1.1 ('SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size'),"1,235,496",352.02M,40.09,18.21,2016,Try live
+SqueezeNet1.1 ('SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size'),"1,235,496",352.02M,39.31,17.72,2016,Try live
+ResAttNet-92 ('Residual Attention Network for Image Classification'),51.3M,?,19.5,4.8,2017,X
+CondenseNet (G=C=8) ('CondenseNet: An Efficient DenseNet using Learned Group Convolutions'),4.8M,?,26.2,8.3,2017,X
+DPN-68 ('Dual Path Networks'),"12,611,602","2,351.84M",23.24,6.79,2017,Try live
+ShuffleNet x1.0 (g=1) ('ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices'),"1,531,936",148.13M,34.93,13.89,2017,Try live
+DiracNetV2-18 ('DiracNets: Training Very Deep Neural Networks Without Skip-Connections'),"11,511,784","1,796.62M",31.47,11.7,2017,Try live
+DiracNetV2-34 ('DiracNets: Training Very Deep Neural Networks Without Skip-Connections'),"21,616,232","3,646.93M",28.75,9.93,2017,Try live
+SENet-16 ('Squeeze-and-Excitation Networks'),"31,366,168","5,081.30M",25.65,8.2,2017,Try live
+SENet-154 ('Squeeze-and-Excitation Networks'),"115,088,984","20,745.78M",18.62,4.61,2017,X
+MobileNet ('MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications'),"4,231,976",579.80M,26.61,8.95,2017,Try live
+NASNet-A 4@1056 ('Learning Transferable Architectures for Scalable Image Recognition'),"5,289,978",584.90M,25.68,8.16,2017,Try live
+NASNet-A 6@4032('Learning Transferable Architectures for Scalable Image Recognition'),"88,753,150","23,976.44M",18.14,4.21,2017,X
+DLA-34 ('Deep Layer Aggregation'),"15,742,104","3,071.37M",25.36,7.94,2017,Try live
+AirNet50-1x64d (r=2) ('Attention Inspiring Receptive-Fields Network for Learning Invariant Representations'),27.43M,?,22.48,6.21,2018,X
+BAM-ResNet-50 ('BAM: Bottleneck Attention Module'),25.92M,?,23.68,6.96,2018,X
+CBAM-ResNet-50 ('CBAM: Convolutional Block Attention Module'),28.1M,?,23.02,6.38,2018,X
+1.0-SqNxt-23v5 ('SqueezeNext: Hardware-Aware Neural Network Design'),"921,816",285.82M,40.77,17.85,2018,X
+1.5-SqNxt-23v5 ('SqueezeNext: Hardware-Aware Neural Network Design'),"1,953,616",550.97M,33.81,13.01,2018,X
+2.0-SqNxt-23v5 ('SqueezeNext: Hardware-Aware Neural Network Design'),"3,366,344",897.60M,29.63,10.66,2018,X
+ShuffleNetV2 ('ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design'),"2,278,604",149.72M,31.44,11.63,2018,Try live
+456-MENet-24×1(g=3) ('Merging and Evolution: Improving Convolutional Neural Networks for Mobile Applications'),5.3M,?,28.4,9.8,2018,X
+FD-MobileNet ('FD-MobileNet: Improved MobileNet with A Fast Downsampling Strategy'),"2,901,288",147.46M,34.23,13.38,2018,Try live
+MobileNetV2 ('MobileNetV2: Inverted Residuals and Linear Bottlenecks'),"3,504,960",329.36M,26.97,8.87,2018,Try live
+IGCV3 ('IGCV3: Interleaved Low-Rank Group Convolutions for Efficient Deep Neural Networks'),3.5M,?,28.22,9.54,2018,X
+DARTS ('DARTS: Differentiable Architecture Search'),4.9M,?,26.9,9,2018,X
+PNASNet-5 ('Progressive Neural Architecture Search'),5.1M,?,25.8,8.1,2018,X
+AmoebaNet-C ('Regularized Evolution for Image Classifier Architecture Search'),5.1M,?,24.3,7.6,2018,X
+MnasNet ('MnasNet: Platform-Aware Neural Architecture Search for Mobile'),"4,308,816",317.67M,31.58,11.74,2018,Try live
+IBN-Net50-a ('Two at Once: Enhancing Learning andGeneralization Capacities via IBN-Net'),?,?,22.54,6.32,2018,X
+MarginNet ('Large Margin Deep Networks for Classification'),?,?,22,?,2018,X
+A^2 Net ('A^2-Nets: Double Attention Networks'),?,?,23,6.5,2018,X
+"FishNeXt-150 ('FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction')",26.2M,?,21.5,?,2018,X
+Shape-ResNet ('IMAGENET-TRAINED CNNS ARE BIASED TOWARDS TEXTURE; INCREASING SHAPE BIAS IMPROVES ACCURACY AND ROBUSTNESS'),25.5M,?,23.28,6.72,2019,X
+SimCNN(k=3 train) ('Greedy Layerwise Learning Can Scale to ImageNet'),?,?,28.4,10.2,2019,X
+SKNet-50 ('Selective Kernel Networks'),27.5M,?,20.79,?,2019,X
+SRM-ResNet-50 ('SRM : A Style-based Recalibration Module for Convolutional Neural Networks'),25.62M,?,22.87,6.49,2019,X
+EfficientNet-B0 ('EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks'),"5,288,548",414.31M,24.77,7.52,2019,Try live
+EfficientNet-B7b ('EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks'),"66,347,960","39,010.98M",15.94,3.22,2019,X
+ProxylessNAS ('PROXYLESSNAS: DIRECT NEURAL ARCHITECTURE SEARCH ON TARGET TASK AND HARDWARE'),?,?,24.9,7.5,2019,X
+MixNet-L ('MixNet: Mixed Depthwise Convolutional Kernels'),7.3M,?,21.1,5.8,2019,X
+ECA-Net50 ('ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks'),24.37M,3.86G,22.52,6.32,2019,X
+ECA-Net101 ('ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks'),7.3M,7.35G,21.35,5.66,2019,X
+ACNet-Densenet121 ('ACNet: Strengthening the Kernel Skeletons for Powerful CNN via Asymmetric Convolution Blocks'),?,?,24.18,7.23,2019,X
+LIP-ResNet-50 ('LIP: Local Importance-based Pooling'),23.9M,5.33G,21.81,6.04,2019,X
+LIP-ResNet-101 ('LIP: Local Importance-based Pooling'),42.9M,9.06G,20.67,5.4,2019,X
+LIP-DenseNet-BC-121 ('LIP: Local Importance-based Pooling'),8.7M,4.13G,23.36,6.84,2019,X
+MuffNet_1.0 ('MuffNet: Multi-Layer Feature Federation for Mobile Deep Learning'),2.3M,146M,30.1,?,2019,X
+MuffNet_1.5 ('MuffNet: Multi-Layer Feature Federation for Mobile Deep Learning'),3.4M,300M,26.9,?,2019,X
+ResNet-34-Bin-5 ('Making Convolutional Networks Shift-Invariant Again'),21.8M,"3,672.68M",25.8,?,2019,X
+ResNet-50-Bin-5 ('Making Convolutional Networks Shift-Invariant Again'),25.5M,"3,877.95M",22.96,?,2019,X
+MobileNetV2-Bin-5 ('Making Convolutional Networks Shift-Invariant Again'),"3,504,960",329.36M,27.5,?,2019,X
+FixRes ResNeXt101 WSL ('Fixing the train-test resolution discrepancy'),829M,?,13.6,2,2019,X
+Noisy Student*(L2) ('Self-training with Noisy Student improves ImageNet classification'),480M,?,12.6,1.8,2019,X
+TResNet-M ('TResNet: High Performance GPU-Dedicated Architecture'),29.4M,5.5G,19.3,?,2020,X
+DA-NAS-C ('DA-NAS: Data Adapted Pruning for Efficient Neural Architecture Search'),?,467M,23.8,?,2020,X
+ResNeSt-50 ('ResNeSt: Split-Attention Networks'),27.5M,5.39G,18.87,?,2020,X
+ResNeSt-101 ('ResNeSt: Split-Attention Networks'),48.3M,10.2G,17.73,?,2020,X
+ResNet-50-FReLU ('Funnel Activation for Visual Recognition'),25.5M,3.87G,22.4,?,2020,X
+ResNet-101-FReLU ('Funnel Activation for Visual Recognition'),44.5M,7.6G,22.1,?,2020,X
