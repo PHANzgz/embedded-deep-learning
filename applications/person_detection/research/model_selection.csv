@@ -1,4 +1,4 @@
-Version,alpha,n_dense,loss,SizeFP16(KB),train_accuracy,val_accuracy,val_AUC,val_f1,val_precision,val_recall,Optimizer,learning_rate,Notes
-V1,0.5,256,BCE,1.871,0.8407,0.8171,0.9422,-,-,-,"Adam, RMSProp","1e-4, 1e-5",-
-V2,0.5,256,BCE,2.031,0.8594,0.8298,0.9524,-,-,-,"Adam, RMSProp","1e-4, 1e-5",-
-V2,0.35,256,BCE,1.465,0.8436,0.829,0.9494,-,-,-,"Adam, RMSProp","1e-4, 1e-5",-
+Version,alpha,n_dense,loss,SizeFP16(MB),train_accuracy,val_accuracy,val_AUC,val_macrof1,val_precision,val_recall,OptTR,OptFT,lr_TR,lr_FN
+V1,0.5,256,BCE,1.871,0.8407,0.8171,0.9422,-1,-1,-1,Adam,RMSProp,1.00E-04,1.00E-05
+V2,0.5,256,BCE,2.031,0.8594,0.8298,0.9524,-1,-1,-1,Adam,RMSProp,1.00E-04,1.00E-05
+V2,0.35,256,BCE,1.465,0.8436,0.829,0.9494,-1,-1,-1,Adam,RMSProp,1.00E-04,1.00E-05
