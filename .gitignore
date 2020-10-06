@@ -1,1 +1,3 @@
 applications/person_detection/research/data
+applications/person_detection/research/logs
+applications/person_detection/research/models
