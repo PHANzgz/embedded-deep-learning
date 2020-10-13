@@ -3,7 +3,7 @@
 
 > **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**  
 Currently finished(pending revision):  
-    * Person and car detection app (research and deployment)
+* Person and car detection app (research and deployment)
 
 # Demo apps
 
@@ -17,9 +17,9 @@ To improve (mostly night) traffic and pollution, an embedded device with a camer
 (TODO)
 
 ## Other ideas
-* Bark detection for dogs, aimed at full-time workers who can't be with their pets the whole day.
 * Smart thermostat that learns from user interaction and improves user experience as well as saving energy.
 * Pose detection for bin-picking
+* Bark detection for dogs (TODO find a better speech recognition application)
 * (TODO)
 
 # Frameworks used
