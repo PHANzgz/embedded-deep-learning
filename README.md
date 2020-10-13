@@ -3,7 +3,7 @@
 
 > **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**  
 Currently finished(pending revision):  
-* Person and car detection app (research and deployment)
+> * Person and car detection app (research and deployment)
 
 # Demo apps
 
