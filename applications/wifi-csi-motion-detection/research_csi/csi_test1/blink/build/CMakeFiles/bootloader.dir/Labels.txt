@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/CMakeFiles/bootloader
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/CMakeFiles/bootloader.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/CMakeFiles/bootloader-complete.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

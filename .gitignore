@@ -2,3 +2,7 @@ applications/person_detection/research/data
 applications/person_detection/research/logs
 applications/person_detection/research/models
 applications/person_detection/research/misc_gitignore
+
+applications/person_detection/application/nucleo-h743-person-car-detection/tensorflow_lite
+applications/person_detection/application/nucleo-h743-person-car-detection/Debug
+applications/person_detection/application/nucleo-h743-person-car-detection/Release

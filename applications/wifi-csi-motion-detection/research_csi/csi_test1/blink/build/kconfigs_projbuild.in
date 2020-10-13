@@ -1,0 +1,5 @@
+source "C:/Users/Kique/esp-idf/components/app_update/Kconfig.projbuild"
+source "C:/Users/Kique/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/Kique/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/Kique/esp-idf/components/partition_table/Kconfig.projbuild"
+source "C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/main/Kconfig.projbuild"

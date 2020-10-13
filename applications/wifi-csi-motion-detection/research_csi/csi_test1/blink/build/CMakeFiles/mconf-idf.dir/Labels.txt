@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/CMakeFiles/mconf-idf
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/CMakeFiles/mconf-idf.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/CMakeFiles/mconf-idf-complete.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+C:/Users/Kique/Documents/Scripts_projects/EmbeddedAI/embedded-deep-learning/applications/wifi-csi-motion-detection/research_csi/csi_test1/blink/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule
