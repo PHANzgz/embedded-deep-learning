@@ -4,5 +4,5 @@
 
 # Demo
 Inference time on ARM Cortex-M7: 1195 ms  
-(TODO provide an actual good quality demo)
+(TODO provide an actual good quality demo)  
 ![demo](demo.gif)

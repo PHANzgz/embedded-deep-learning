@@ -1,7 +1,7 @@
 # embedded-deep-learning
  Research and code examples about embedded deep learning applications in different areas and microcontrollers, like ESP32 or STM32 MCUs.
 
-> **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**
+> **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**  
 Currently finished(pending revision):  
     - Person and car detection app (research and deployment)
 
