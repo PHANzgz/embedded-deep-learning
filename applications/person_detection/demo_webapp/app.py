@@ -16,8 +16,8 @@ def main():
 
     page = PAGES[selection]
 
-    with st.spinner("Loading {} ...".format(selection)):
-        page.write()
+    #with st.spinner("Loading {} ...".format(selection)):
+    page.write()
 
     st.sidebar.title("About")
     st.sidebar.info(

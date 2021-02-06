@@ -6,6 +6,18 @@ import random
 import requests
 import time
 
+@st.cache
+def load_model(fn):
+    # Load the TFLite model and allocate tensors.
+    interpreter = tf.lite.Interpreter(model_path=fn)
+    interpreter.allocate_tensors()
+
+    # Get input and output tensors.
+    input_details = interpreter.get_input_details()
+    output_details = interpreter.get_output_details()
+
+    return interpreter, input_details, output_details
+
 def write():
     st.markdown(
     '''
@@ -57,8 +69,15 @@ def write():
     pressed_get_img = left_column.button('Get random image', key="get_img_button")
     uploaded_file  = right_column.file_uploader("Or upload your own...", "jpg")
 
+    # Quickly display blank image to avoid weird page scrolling, we'll fill it later
+    new_im = Image.new("RGB", (640, 640), color="white")
+    loaded_image_ph.image(new_im, use_column_width='auto')
+
     if uploaded_file is not None:
         img = Image.open(uploaded_file)
+
+        if pressed_get_img:
+            st.warning("Please remove uploaded file to classify a random image")
 
     elif pressed_get_img:
         with open("random_filenames.txt", "rt") as f: # Return random line
@@ -74,7 +93,7 @@ def write():
     else:
         img = Image.open("./img/sample_image.jpg")
 
-
+    
     # Display padded loaded image
     desired_size = 640
     old_size = img.size  
@@ -83,7 +102,7 @@ def write():
     new_size = tuple([int(x*ratio) for x in old_size])
     im = img.resize(new_size, Image.ANTIALIAS)
     # create a new image and paste the resized on it
-    new_im = Image.new("RGB", (desired_size, desired_size))
+    
     new_im.paste(im, ((desired_size-new_size[0])//2,
                         (desired_size-new_size[1])//2))
     loaded_image_ph.image(new_im, use_column_width='auto')
@@ -106,13 +125,7 @@ def write():
     img_ph.image(img_prep.numpy()+128, use_column_width='always', clamp=True)
 
     # Load tflite model
-    # Load the TFLite model and allocate tensors.
-    interpreter = tf.lite.Interpreter(model_path="uc_final_model.tflite")
-    interpreter.allocate_tensors()
-
-    # Get input and output tensors.
-    input_details = interpreter.get_input_details()
-    output_details = interpreter.get_output_details()
+    interpreter, input_details, output_details = load_model("uc_final_model.tflite")
 
     interpreter.set_tensor(input_details[0]['index'], np.expand_dims(img_prep, axis=0))
     t1 = time.time()
@@ -120,6 +133,7 @@ def write():
     t2 = time.time()
     output_data = interpreter.get_tensor(output_details[0]['index'])
 
+    
     # Format scores in pretty progress bars and show prediction
     norm_scores = ((output_data + 128) / 255).reshape(-1)
     car_score, negative_score, person_score = norm_scores.tolist()
