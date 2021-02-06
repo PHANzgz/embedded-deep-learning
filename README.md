@@ -12,7 +12,14 @@ To improve (mostly night) traffic and pollution, an embedded device with a camer
 
 ### [Learn more](/applications/person_detection/)
 ![webapp-sample](/images/webapp-demo-sample.jpg)
-You can also try the model on your browser with the web app.
+You can also try the model on your browser with the web app.  
+<br>
+![hardware](/applications/person_detection/demo_webapp/img/hardware.jpg)
+Hardware used: NUCLEO-H743ZI2 dev board, OV7670 camera, ILI9341 powered LCD-TFT screen
+<br><br>
+
+## Handwriting recognition using accelerometer data (nRF52840)
+(TODO, framework edgeimpulse+keras)  
 
 ## Motion detection and localization using Wi-Fi CSI signals (ESP32)
 (TODO)
@@ -30,7 +37,7 @@ You can also try the model on your browser with the web app.
 
 * Tensorflow Lite for microcontrollers
 * X-CUBE-AI (STM32)
-* Edgeimpulse (?)
+* Edgeimpulse
 
 # Side notes
 
