@@ -1,0 +1,1 @@
+web: streamlit run /applications/person_detection/demo_webapp/app.py
