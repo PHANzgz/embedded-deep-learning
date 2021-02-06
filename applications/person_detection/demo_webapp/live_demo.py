@@ -2,9 +2,10 @@ import streamlit as st
 import numpy as np 
 import pandas as pd 
 import tensorflow as tf 
-import matplotlib as mpl 
-import matplotlib.pyplot as plt
-import tensorflow as tf
+from PIL import Image
+import random
+import requests
+import time
 
 def write():
     st.markdown(
@@ -32,7 +33,7 @@ def write():
     '''
     )
 
-    st.image(plt.imread("./img/hardware.jpg"), use_column_width=True,
+    st.image(Image.open("./img/hardware.jpg"), use_column_width=True,
             caption = "Hardware used: NUCLEO-H743ZI2 dev board, OV7670 camera, ILI9341 powered LCD-TFT screen")
 
     st.markdown(
@@ -42,13 +43,13 @@ def write():
     If you want to try the model right now on your browser you can do it! Just select an image and let the model
     make its predictions.
 
-    You can choose a random image from the whole validation dataset or upload
+    You can choose a random image from part of the validation dataset or upload
     an image of your own(JPG). 
 
     '''
     )
 
-    st.markdown("## Loaded image")
+    st.markdown("## Loaded image (padded)")
     loaded_image_ph = st.empty() # placeholder for the loaded image
 
     left_column, right_column = st.beta_columns(2)
@@ -58,20 +59,45 @@ def write():
     uploaded_file  = right_column.file_uploader("Or upload your own...", "jpg")
 
     if uploaded_file is not None:
-        img = plt.imread(uploaded_file)
-    else:
-        img = plt.imread("./img/sample_image.jpg")
+        img = Image.open(uploaded_file)
 
-    loaded_image_ph.image(img, use_column_width='always')
+    elif pressed_get_img:
+        with open("random_filenames.txt", "rt") as f: # Return random line
+            line = next(f)
+            for num, aline in enumerate(f, 2):
+                if random.randrange(num):
+                    continue
+                line = aline
+
+        url = "https://embedded-ai.000webhostapp.com/" + "person-detection-small-val/" + line[:-1]
+        img = Image.open(requests.get(url, stream=True).raw)
+        
+    else:
+        img = Image.open("./img/sample_image.jpg")
+
+
+    # Display padded loaded image
+    desired_size = 640
+    old_size = img.size  
+
+    ratio = float(desired_size)/max(old_size)
+    new_size = tuple([int(x*ratio) for x in old_size])
+    im = img.resize(new_size, Image.ANTIALIAS)
+    # create a new image and paste the resized on it
+    new_im = Image.new("RGB", (desired_size, desired_size))
+    new_im.paste(im, ((desired_size-new_size[0])//2,
+                        (desired_size-new_size[1])//2))
+    loaded_image_ph.image(new_im, use_column_width='auto')
+    #loaded_image_ph.image(Image.open("./img/sample_image.jpg"), use_column_width='auto') # DEBUG
 
     # Transform image to model input format
     uc_img_size = (240, 160) # the resolution the OV7670 is halved horizontally to reduce RAM usage
-    img_res = tf.image.resize(img, uc_img_size)
+    img_res = tf.image.resize(np.array(img), uc_img_size)
     img_prep = tf.cast(img_res-128., tf.int8)
 
     st.markdown(
     """
-    ## Actual input of the model  
+    ## Actual input of the model and prediction
     This simulates the capture of the OV7670 camera. It may seem an odd resolution but to reduce RAM usage
     the resolution is halved horizontally(160x240) from the orignal capture size. Otherwise the model RAM
     usage would not fit into the STM32H7. The performance metrics were barely affected.
@@ -90,8 +116,9 @@ def write():
     output_details = interpreter.get_output_details()
 
     interpreter.set_tensor(input_details[0]['index'], np.expand_dims(img_prep, axis=0))
-
+    t1 = time.time()
     interpreter.invoke()
+    t2 = time.time()
     output_data = interpreter.get_tensor(output_details[0]['index'])
 
     # Format scores in pretty progress bars and show prediction
@@ -106,19 +133,8 @@ def write():
     pred_ph.progress(person_score)
     classes = np.array(["Car", "Negative", "Person"])
     predicted_classes = classes[np.where(norm_scores>0.5, True, False)]
-    pred_ph.markdown("<br>**Predicted classes:** {}".format(", ".join(predicted_classes)), unsafe_allow_html=True)
-
-    if st.checkbox('Show dataframe'):
-        chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
-        columns=['a', 'b', 'c'])
-
-        st.line_chart(chart_data)
-
-    left_column, right_column = st.beta_columns(2)
-    pressed = left_column.button('Press me?')
-    if pressed:
-        right_column.write("Woohoo!")
+    pred_ph.markdown("<br><br>**Predicted classes:** {}".format(", ".join(predicted_classes)), unsafe_allow_html=True)
+    pred_ph.markdown("**Inference time(server side):** {} ms".format(int((t2-t1)*1000)), unsafe_allow_html=True)
 
     expander = st.beta_expander("Image credits")
     expander.markdown(
@@ -146,9 +162,9 @@ def write():
         I will probably be running the application from home or the university. Otherwise the model would find strange 
         patterns and categorize them as "person" or "car".  
 
-        With that being said, the model still performs remarkably well, with a 0.89 F1 score on the validation data and
-        "quite good" performance detecting my relatives and I at home from the microcontroller version. Nevertheless, it 
-        has its limitations; You may have noticed how the default sample image actually contains a car in the background 
+        With that being said, the model still performs quite well given its size, with a 0.89 F1 score on the validation 
+        data and "quite good" performance detecting my relatives and I at home from the microcontroller version. Nevertheless,
+        it has its limitations; You may have noticed how the default sample image actually contains a car in the background 
         but the model does not detect it. This occurs when the cars are widely occluded by other elements. The reason is 
         probably the data: Since the car class was unbalanced(much fewer examples) I added a lot of car images from the 
         "Cars Dataset", which contains clean, centered and not at all occluded cars.

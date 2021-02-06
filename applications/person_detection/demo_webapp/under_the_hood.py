@@ -6,8 +6,6 @@ def write():
 
     st.markdown(
         """
-        Lorem ipsum
+        Lorem ipsum (TODO)
         """
     )
-
-    st.title("Sample title")
