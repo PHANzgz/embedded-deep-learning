@@ -17,7 +17,10 @@ It may be easier to open the notebook on colab, but keep in mind that if you do 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PHANzgz/embedded-deep-learning/blob/master/applications/person_detection/research/person-car-detection-research.ipynb)
 
 ## App deployment
-For the C/C++ code check [application/nucleo-h743-person-car-detection/Core](application/nucleo-h743-person-car-detection/Core) folder.  
+For the C/C++ code check [application/nucleo-h743-person-car-detection/Core](application/nucleo-h743-person-car-detection/Core) folder.
+
+You may find useful [my other repository](https://github.com/PHANzgz/STM32-H7-camera-interface-and-display) where I explain
+how to interface an STM32-H7 with the OV7670 camera and the ILI9341 LCD-TFT screen.
 
 (TODO explain a bit each file)
 
