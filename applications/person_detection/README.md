@@ -30,5 +30,5 @@ Open the web-app [here]() (TODO wait for streamlit share invitation)
 
 # A homemade demo, running on the STM32H743
 
-Inference time on ARM Cortex-M7: 1195 ms 
+Inference time on ARM Cortex-M7: 1195 ms  
 ![demo](demo.gif)
