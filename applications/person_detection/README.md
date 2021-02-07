@@ -25,7 +25,6 @@ how to interface an STM32-H7 with the OV7670 camera and the ILI9341 LCD-TFT scre
 (TODO explain a bit each file)
 
 # Web App Demo
-(TODO wait for streamlit share invitation)
 If you want to try the model right now on your browser you can do it inside the web demo!  
 
 <p align="center">
@@ -36,7 +35,7 @@ If you want to try the model right now on your browser you can do it inside the 
 
 ![demogif](webapp-demo.gif)
 
-![hardware](/demo_webapp/img/hardware.jpg)
+![hardware](/demo_webapp/person_detection/img/hardware.jpg)
 Hardware used: NUCLEO-H743ZI2 dev board, OV7670 camera, ILI9341 powered LCD-TFT screen
 
 # A homemade demo, running on the STM32H743
