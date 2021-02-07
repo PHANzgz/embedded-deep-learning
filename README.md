@@ -8,7 +8,7 @@ Currently finished(pending revision):
 
 # Web app
 
-The best way to enjoy this research is through the web app. You can come back later the source code.
+The best way to enjoy this research is through the web app. You can come back later to check the source code.
 
 <p align="center">
     <a href="https://embedded-person-car-detection.herokuapp.com/">
