@@ -11,7 +11,7 @@ PAGES = {
 }
 
 def main():
-    st.sidebar.title("Navigation menu")
+    st.sidebar.title("Multilabel classification on the edge")
     selection = st.sidebar.radio("", list(PAGES.keys()))
 
     page = PAGES[selection]
