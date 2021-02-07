@@ -1,5 +1,0 @@
-streamlit==0.56.0
-tensorflow==2.1.0
-requests==2.22.0
-numpy==1.16.5
-Pillow==8.1.0
