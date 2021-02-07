@@ -11,7 +11,7 @@ Currently finished(pending revision):
 The best way to enjoy this research is through the web app. You can come back later to check the source code.
 
 <p align="center">
-    <a href="https://embedded-person-car-detection.herokuapp.com/">
+    <a href="https://embedded-deep-learning.herokuapp.com/">
         <img src="images/launch-webapp-btn.png" alt="launch web app">
     </a>
 </p>
