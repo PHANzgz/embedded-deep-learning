@@ -24,9 +24,9 @@ how to interface an STM32-H7 with the OV7670 camera and the ILI9341 LCD-TFT scre
 
 (TODO explain a bit each file)
 
-# [Web App Demo]()
+# Web App Demo
 (TODO wait for streamlit share invitation)
-If you want to try the model right now on your browser you can do it!  
+If you want to try the model right now on your browser you can do it inside the web demo!  
 Open the web-app [here]() (TODO wait for streamlit share invitation)
 ![demogif](demo_webapp/img/demo.gif)
 

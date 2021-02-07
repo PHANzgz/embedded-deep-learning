@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import base64
+import os
 
 
 def st_gif(path):
@@ -16,9 +17,11 @@ def st_gif(path):
 
 
 def write():
+    dirname = os.path.dirname(__file__)
+
     st.title("Architecture overview")
 
-    st.image(Image.open("./img/person-detection-infogram.png"))
+    st.image(Image.open(os.path.join(dirname, "img/person-detection-infogram.png")))
 
     st.markdown(
         """
@@ -39,4 +42,4 @@ def write():
         """
     )
 
-    st_gif("img/homemade-demo.gif")
+    st_gif(os.path.join(dirname, "img/homemade-demo.gif"))

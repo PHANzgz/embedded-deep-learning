@@ -5,6 +5,7 @@ from PIL import Image
 import random
 import requests
 import time
+import os
 
 @st.cache
 def load_model(fn):
@@ -18,7 +19,10 @@ def load_model(fn):
 
     return interpreter, input_details, output_details
 
+
+
 def write():
+    dirname = os.path.dirname(__file__)
     st.markdown(
     '''
     # Multilabel classification on the edge
@@ -44,7 +48,8 @@ def write():
     '''
     )
 
-    st.image(Image.open("./img/hardware.jpg"), use_column_width=True,
+    hw_img = os.path.join(dirname, "img/hardware.jpg")
+    st.image(Image.open(hw_img), use_column_width=True,
             caption = "Hardware used: NUCLEO-H743ZI2 dev board, OV7670 camera, ILI9341 powered LCD-TFT screen")
 
     st.markdown(
@@ -80,7 +85,8 @@ def write():
             st.warning("Please remove uploaded file to classify a random image")
 
     elif pressed_get_img:
-        with open("random_filenames.txt", "rt") as f: # Return random line
+        filenames_txt = os.path.join(dirname, "random_filenames.txt")
+        with open(filenames_txt, "rt") as f: # Return random line
             line = next(f)
             for num, aline in enumerate(f, 2):
                 if random.randrange(num):
@@ -91,7 +97,7 @@ def write():
         img = Image.open(requests.get(url, stream=True).raw)
         
     else:
-        img = Image.open("./img/sample_image.jpg")
+        img = Image.open(os.path.join(dirname, "img/sample_image.jpg"))
 
     
     # Display padded loaded image
@@ -125,7 +131,7 @@ def write():
     img_ph.image(img_prep.numpy()+128, use_column_width='always', clamp=True)
 
     # Load tflite model
-    interpreter, input_details, output_details = load_model("uc_final_model.tflite")
+    interpreter, input_details, output_details = load_model(os.path.join(dirname, "uc_final_model.tflite"))
 
     interpreter.set_tensor(input_details[0]['index'], np.expand_dims(img_prep, axis=0))
     t1 = time.time()
