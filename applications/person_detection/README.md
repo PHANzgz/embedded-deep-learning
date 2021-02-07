@@ -30,11 +30,11 @@ If you want to try the model right now on your browser you can do it inside the 
 
 <p align="center">
     <a href="https://embedded-person-car-detection.herokuapp.com/">
-        <img src="images/launch-webapp-btn.png" alt="launch web app">
+        <img src="/images/launch-webapp-btn.png" alt="launch web app">
     </a>
 </p>
 
-![demogif](demo_webapp/img/demo.gif)
+![demogif](webapp-demo.gif)
 
 
 # A homemade demo, running on the STM32H743
