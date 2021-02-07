@@ -13,7 +13,7 @@ The best way to enjoy this research is through the web app. You can come back la
 
 <p align="center">
     <a href="https://github.com/PHANzgz/embedded-deep-learning">
-        <img src="images/launch-webapp.png" alt="launch web app">
+        <img src="images/launch-webapp-btn.png" alt="launch web app">
     </a>
 </p>
 
