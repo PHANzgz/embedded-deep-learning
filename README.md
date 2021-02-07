@@ -3,16 +3,15 @@
 
 > **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**  
 Currently finished(pending revision):  
-> * [Web app that contains interactive demos and info about each app]() (AWAITING DEPLOYMENT)
+> * [Web app that contains interactive demos and info about each app](https://embedded-person-car-detection.herokuapp.com/)
 > * [Person and car detection app](/applications/person_detection/) (research and deployment)
 
 # Web app
 
 The best way to enjoy this research is through the web app. You can come back later the source code.
-(AWAITING DEPLOYMENT, ONLY LOCAL FOR NOW)
 
 <p align="center">
-    <a href="https://github.com/PHANzgz/embedded-deep-learning">
+    <a href="https://embedded-person-car-detection.herokuapp.com/">
         <img src="images/launch-webapp-btn.png" alt="launch web app">
     </a>
 </p>

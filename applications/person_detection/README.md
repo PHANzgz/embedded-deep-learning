@@ -27,7 +27,13 @@ how to interface an STM32-H7 with the OV7670 camera and the ILI9341 LCD-TFT scre
 # Web App Demo
 (TODO wait for streamlit share invitation)
 If you want to try the model right now on your browser you can do it inside the web demo!  
-Open the web-app [here]() (TODO wait for streamlit share invitation)
+
+<p align="center">
+    <a href="https://embedded-person-car-detection.herokuapp.com/">
+        <img src="images/launch-webapp-btn.png" alt="launch web app">
+    </a>
+</p>
+
 ![demogif](demo_webapp/img/demo.gif)
 
 
