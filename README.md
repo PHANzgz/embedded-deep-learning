@@ -5,6 +5,7 @@
 Currently finished(pending revision):  
 > * [Web app that contains interactive demos and info about each app](https://embedded-person-car-detection.herokuapp.com/)
 > * [Person and car detection app](/applications/person_detection/) (research and deployment)
+> * Sneak peek of the online handwriting recognition app on the web app!
 
 # Web app
 
