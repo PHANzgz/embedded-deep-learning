@@ -8,7 +8,7 @@ import handwriting_rec.demo
 import predictive_maint.demo
 
 APP_NAMES = [ "Multilabel classification on the edge",
-         "Handwriting recognition using an accelerometer (TODO)",
+         "Handwriting recognition using an accelerometer (Sneak peek)",
          "Predictive maintenance(TODO)"]
 
 PAGES_PD = {
