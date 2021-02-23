@@ -6,3 +6,9 @@ applications/person_detection/research/misc_gitignore
 applications/person_detection/application/nucleo-h743-person-car-detection/tensorflow_lite
 applications/person_detection/application/nucleo-h743-person-car-detection/Debug
 applications/person_detection/application/nucleo-h743-person-car-detection/Release
+
+applications/handwriting_recognition/research/data
+applications/handwriting_recognition/research/keys
+applications/handwriting_recognition/research/temp
+
+*.ipynb_checkpoints
