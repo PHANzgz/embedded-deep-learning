@@ -3,7 +3,7 @@
 
 > **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**  
 Currently finished(pending revision):  
-> * [Web app that contains interactive demos and info about each app](https://embedded-person-car-detection.herokuapp.com/)
+> * [Web app that contains interactive demos and info about each app](https://share.streamlit.io/phanzgz/embedded-deep-learning/demo_webapp/app.py)
 > * [Person and car detection app](/applications/person_detection/) (research and deployment)
 > * Sneak peek of the online handwriting recognition app on the web app!
 

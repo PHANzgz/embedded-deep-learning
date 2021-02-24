@@ -28,7 +28,7 @@ how to interface an STM32-H7 with the OV7670 camera and the ILI9341 LCD-TFT scre
 If you want to try the model right now on your browser you can do it inside the web demo!  
 
 <p align="center">
-    <a href="https://embedded-deep-learning.herokuapp.com/">
+    <a href="https://share.streamlit.io/phanzgz/embedded-deep-learning/demo_webapp/app.py">
         <img src="/images/launch-webapp-btn.png" alt="launch web app">
     </a>
 </p>
