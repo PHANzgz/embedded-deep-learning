@@ -10,10 +10,10 @@ Currently finished(pending revision):
 # Web app
 
 The best way to enjoy this research is through the web app. You can come back later to check the source code.  
-Please note it may take up to one minute to load the app if the server is asleep.  
+~~Please note it may take up to one minute to load the app if the server is asleep.~~  
 
 <p align="center">
-    <a href="https://embedded-deep-learning.herokuapp.com/">
+    <a href="https://share.streamlit.io/phanzgz/embedded-deep-learning/demo_webapp/app.py">
         <img src="images/launch-webapp-btn.png" alt="launch web app">
     </a>
 </p>  
