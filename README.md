@@ -5,7 +5,8 @@
 Currently finished(pending revision):  
 > * [Web app that contains interactive demos and info about each app](https://share.streamlit.io/phanzgz/embedded-deep-learning/demo_webapp/app.py)
 > * [Person and car detection app](/applications/person_detection/) (research and deployment)
-> * Sneak peek of the online handwriting recognition app on the web app!
+> * [Online handwriting recognition with an accelerometer app](/applications/handwriting_recognition/) (research and deployment)(pending documentation)
+> * Sneak peek of the online handwriting recognition app on the web app! (Pending update)
 
 # Web app
 

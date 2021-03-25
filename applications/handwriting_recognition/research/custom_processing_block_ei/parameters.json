@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "info": {
+        "title": "Custom Block",
+        "author": "Enrique Phan",
+        "description": "Centers data and applies a low-pass filter",
+        "name": "Custom block",
+        "cppType": "custom_block",
+        "preferConvolution": false,
+        "visualization": "dimensionalityReduction",
+        "experimental": false
+    },
+    "parameters": [
+        {
+            "group": "Scaling",
+            "items": [
+                {
+                    "name": "Scale axes",
+                    "value": 1,
+                    "type": "float",
+                    "help": "Multiplies axes by this number",
+                    "param": "scale-axes"
+                },
+                {
+                    "name": "Center data",
+                    "value": true,
+                    "type": "boolean",
+                    "help": "Whether to subtract the mean for each sample",
+                    "param": "center-data"
+                }
+            ]
+        },
+        {
+            "group": "Low pass filter",
+            "items": [
+                {
+                    "name": "Filter order",
+                    "value": 2,
+                    "type": "int",
+                    "help": "Order for the butterworth low-pass filter",
+                    "param": "filter_order"
+                },
+                {
+                    "name": "Cutoff frequency (Hz)",
+                    "value": 30,
+                    "type": "float",
+                    "help": "Selects the cuttoff frequency for the butterworth low-pass filter",
+                    "param": "cutoff"
+                }
+            ]
+        }
+    ]
+}
