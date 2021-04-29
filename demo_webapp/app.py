@@ -5,10 +5,11 @@ import numpy as np
 import person_detection.live_demo
 import person_detection.under_the_hood
 import handwriting_rec.demo
+import handwriting_rec.under_the_hood
 import predictive_maint.demo
 
 APP_NAMES = [ "Multilabel classification on the edge",
-         "Handwriting recognition using an accelerometer (Sneak peek)",
+         "Handwriting recognition using an accelerometer",
          "Predictive maintenance(TODO)"]
 
 PAGES_PD = {
@@ -17,7 +18,8 @@ PAGES_PD = {
 }
 
 PAGES_HR = {
-    "Demo": handwriting_rec.demo
+    "Demo": handwriting_rec.demo,
+    "Under the hood": handwriting_rec.under_the_hood
 }
 
 PAGES_PM = {
