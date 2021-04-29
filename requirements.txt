@@ -1,3 +1,4 @@
+plotly==4.14.3
 streamlit==0.76.0
 tensorflow-cpu==2.3.0
 numpy>=1.18.0
