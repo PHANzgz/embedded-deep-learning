@@ -39,19 +39,19 @@ def write():
     )
 
     st.markdown(
-            """
-            # A homemade demo, running on the nRF5240 MCU
+        """
+        # A homemade demo, running on the nRF5240 MCU
 
-            Data is continuously sampled and filtered. The data is fed to the convolutional neural network, which also runs constantly with the latest 
-            two seconds of accelerometer data. Once a letter is written on paper and a prediction is made, the information is sent over BLE.  
+        Data is continuously sampled and filtered. The data is fed to the convolutional neural network, which also runs constantly with the latest 
+        two seconds of accelerometer data. Once a letter is written on paper and a prediction is made, the information is sent over BLE.  
 
-            In this visual demo, the output BLE data is received by a Raspberry Pi Zero with a little screen on top of it showing the current string.  
+        In this visual demo, the output BLE data is received by a Raspberry Pi Zero with a little screen on top of it showing the current string.  
 
-            Preprocessing takes approximately 10ms.  
-            Inference takes approximately 62ms.  
+        Preprocessing takes approximately 10ms.  
+        Inference takes approximately 62ms.  
 
-            """
-        )
+        """
+    )
 
     st_gif(os.path.join(dirname, "img/demo.gif"))
 

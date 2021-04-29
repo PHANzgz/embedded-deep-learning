@@ -1,12 +1,7 @@
 # embedded-deep-learning
- Research and code examples about embedded deep learning applications in different areas and microcontrollers, like ESP32 or STM32 MCUs.
+ Research and code examples about embedded deep learning applications in different areas and microcontrollers, like nRF52840 or STM32 MCUs.
 
-> **This repository is still under development and will be for a while, but if you are eager to see what is currently done feel free to browse.**  
-Currently finished(pending revision):  
-> * [Web app that contains interactive demos and info about each app](https://share.streamlit.io/phanzgz/embedded-deep-learning/demo_webapp/app.py)
-> * [Person and car detection app](/applications/person_detection/) (research and deployment)
-> * [Online handwriting recognition with an accelerometer app](/applications/handwriting_recognition/) (research and deployment)(pending documentation)
-> * Sneak peek of the online handwriting recognition app on the web app! (Pending update)
+> **This repository is still under development, but feel free to browse the web-app and the currently developed applications.**  
 
 # Web app
 
@@ -35,27 +30,44 @@ Hardware used: NUCLEO-H743ZI2 dev board, OV7670 camera, ILI9341 powered LCD-TFT 
 <br><br>
 
 ## Handwriting recognition using accelerometer data (nRF52840)
-(TODO, framework edgeimpulse+keras)  
+Character recognition is a common practice in different fields and is typically done with optical methods(i.e. through images).
+Sometimes the use of a camera or an optical sensor may be inconvenient, so a different approach is proposed to recognize handwritten
+characters.  
+<br>
+An accelerometer(IMU) is put on the end of the barrel of a pen(furthest possible from the tip so it doesn't feel uncomfortable when writing)
+and acceleration is measured in three axes. The application processes the data continuously and generates predictions if a pattern matches
+a trained character.  
+<br>
+This method provides a cheaper and more convenient approach for handwriting recognition. Apart from that, the characters are predicted
+while the strokes are being drawn rather than once the sketch is done, that's why it's called *online* character recognition. 
+<br>
+For this application, the [Edge Impulse](https://www.edgeimpulse.com/) was used. It has excellent tools for data acquisition and 
+model deployment. On top of that, you can code your own preprocessing blocks and model architectures with tensorflow and keras, adding
+an arbitrary level of customization.  
+<br>
+### [Learn more](/applications/handwriting_recognition/) 
+<br>
+![homemade_demo](/demo_webapp/person_detection/img/hardware.jpg)
+This (homemade) demo, shows the application running on an nRF52840 MCU. 
+Data is continuously sampled and filtered. The data is fed to the convolutional neural network, which also runs constantly with the latest 
+two seconds of accelerometer data. Once a letter is written on paper and a prediction is made, the information is sent over BLE.  
 
-## Motion detection and localization using Wi-Fi CSI signals (ESP32)
-(TODO)
+In this visual demo, the output BLE data is received by a Raspberry Pi Zero with a little screen on top of it showing the current string.  
 
-## Predictive maintenance (Apollo3, nRF52840)
-(TODO)
+Preprocessing takes approximately 10ms.  
+Inference takes approximately 62ms.  
+<br><br>
+
+## Future work
+* Motion detection and localization using Wi-Fi CSI signals (ESP32)
+* Predictive maintenance (Apollo3, nRF52840)
 
 ## Other ideas
 * Smart thermostat that learns from user interaction and improves user experience as well as saving energy.
 * Pose detection for bin-picking
-* Bark detection for dogs (TODO find a better speech recognition application)
-* (TODO)
 
 # Frameworks used
 
 * Tensorflow Lite for microcontrollers
 * X-CUBE-AI (STM32)
 * Edgeimpulse
-
-# Side notes
-
-* Jetson Nano
-* Deep learning on FPGAs.

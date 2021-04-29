@@ -48,8 +48,8 @@ def main():
     st.sidebar.info(
         """
         This project was created by Enrique Phan to demonstrate the development
-        and deployment of a deep neural network for multilabel classifcation on
-        a microcontroller. You can check the source code and learn more in
+        and deployment of different deep learning applications on microcontrollers. 
+        You can check the source code and learn more in
         [the github repository](https://github.com/PHANzgz/embedded-deep-learning).
         """
         )
