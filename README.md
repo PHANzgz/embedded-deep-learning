@@ -39,14 +39,15 @@ and acceleration is measured in three axes. The application processes the data c
 a trained character.  
 <br>
 This method provides a cheaper and more convenient approach for handwriting recognition. Apart from that, the characters are predicted
-while the strokes are being drawn rather than once the sketch is done, that's why it's called *online* character recognition. 
+while the strokes are being drawn rather than once the sketch is done, that's why it's called *online* character recognition.  
 <br>
 For this application, the [Edge Impulse](https://www.edgeimpulse.com/) was used. It has excellent tools for data acquisition and 
 model deployment. On top of that, you can code your own preprocessing blocks and model architectures with tensorflow and keras, adding
 an arbitrary level of customization.  
 <br>
 ### [Learn more](/applications/handwriting_recognition/) 
-<br>
+<br><br>
+
 ![homemade_demo](/demo_webapp/person_detection/img/hardware.jpg)
 This (homemade) demo, shows the application running on an nRF52840 MCU. 
 Data is continuously sampled and filtered. The data is fed to the convolutional neural network, which also runs constantly with the latest 
