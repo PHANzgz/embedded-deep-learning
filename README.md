@@ -48,7 +48,7 @@ an arbitrary level of customization.
 ### [Learn more](/applications/handwriting_recognition/) 
 <br><br>
 
-![homemade_demo](/demo_webapp/person_detection/img/hardware.jpg)
+![homemade_demo](/demo_webapp/handwriting_recognition/demo.gif)
 This (homemade) demo, shows the application running on an nRF52840 MCU. 
 Data is continuously sampled and filtered. The data is fed to the convolutional neural network, which also runs constantly with the latest 
 two seconds of accelerometer data. Once a letter is written on paper and a prediction is made, the information is sent over BLE.  
