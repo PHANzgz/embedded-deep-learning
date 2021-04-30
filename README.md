@@ -46,7 +46,7 @@ model deployment. On top of that, you can code your own preprocessing blocks and
 an arbitrary level of customization.  
 <br>
 ### [Learn more](/applications/handwriting_recognition/) 
-<br><br>
+<br>
 
 ![homemade_demo](/demo_webapp/handwriting_rec/img/demo.gif)  
 This (homemade) demo, shows the application running on an nRF52840 MCU. 
