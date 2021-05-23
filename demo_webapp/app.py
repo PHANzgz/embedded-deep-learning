@@ -37,7 +37,7 @@ def main():
     # Section select
     st.sidebar.subheader(app_selection)
     app_selection_ix = APP_NAMES.index(app_selection)
-    page_selection = st.sidebar.radio("", list(PAGES[app_selection_ix].keys()))
+    page_selection = st.sidebar.radio("", list(PAGES[app_selection_ix].keys()), index=1)
     page = PAGES[app_selection_ix][page_selection]
 
     # Write selected page
